@@ -243,8 +243,10 @@
 				});
 			});
 			$lg.on('onAfterSlide.lg', function(event, prevIndex, index) {
-				$(".ss-networks").jsSocials("refresh");
+				var curr_url      = window.location.href; 
+				console.log(curr_url);
 			   $(".ss-networks").jsSocials({
+			   		url: curr_url,
 			   	    showLabel: false,
     				showCount: false,
             		shares: [ "facebook", "twitter", "pinterest", "email"]
