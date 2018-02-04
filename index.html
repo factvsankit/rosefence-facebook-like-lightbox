@@ -240,10 +240,8 @@
 				});
 			});
 
-			$lg.on('onAfterOpen.lg',function(event, index, fromTouch, fromThumb){
-				$('.social-share').each(function(){
-				$('.sharethis-inline-share-buttons').appendTo($(this));
-			});
+			$lg.on('onAfterSlide.lg',function(event, index, fromTouch, fromThumb){
+				$('.sharethis-inline-share-buttons').appendTo('.social-share');
 			});
 		});
 </script>
