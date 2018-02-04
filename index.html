@@ -245,7 +245,9 @@
 			$lg.on('onAfterSlide.lg', function(event, prevIndex, index) {
 				var curr_url      = window.location.href; 
 				console.log(curr_url);
+				var curr_project_text = "hello";
 			   $(".ss-networks").jsSocials({
+			   	text: curr_project_text,
 			   		url: curr_url,
 			   	    showLabel: false,
     				showCount: false,
