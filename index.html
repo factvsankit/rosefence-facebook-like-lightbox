@@ -153,6 +153,27 @@
 	.st-btn.st-last.st-remove-label{
 		display: none !important;
 	}
+	.social-share-product-view{
+		position: absolute;
+		left:0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		padding: 15px 15px 40px;
+	}
+	.social-share-product-view .product-view{
+		margin-bottom: 25px;
+	}
+	.social-share-product-view .product-view a{
+		display: block;
+		padding: 15px;
+		text-align: center;
+		color: #fff;
+		background-color: #771216;
+		-webkit-transition: opacity 0.5s ease-out;
+		-o-transition: opacity 0.5s ease-out;
+		transition: opacity 0.5s ease-out;
+	}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
@@ -160,7 +181,7 @@
 
 	<div class="demo-gallery">
 		<ul id="lightgallery" class="list-unstyled row">
-			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p><div class="social-share"><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58a4283ce4acd1001475a299&product=inline-share-buttons"></script><div class="sharethis-inline-share-buttons"></div></div></div>'>
+			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p><div class="social-share-product-view"><div class="product-view"><a href="" target="_blank">View Product Details</a></div><div class="social-share"><h3>Share This Product</h3><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58a4283ce4acd1001475a299&product=inline-share-buttons"></script><div class="sharethis-inline-share-buttons"></div></div></div></div>'>
 				<a href="">
 					<img class="img-responsive" src="img/thumb-1.jpg">
 				</a>
