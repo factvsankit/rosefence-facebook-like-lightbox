@@ -217,7 +217,8 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('#lightgallery').lightGallery({
+			var $lg = $('#lightgallery');
+			$lg.lightGallery({
 				mode: 'lg-fade',
 				appendSubHtmlTo: '.lg-item',
 				subHtmlSelectorRelative: true,
@@ -230,23 +231,15 @@
 				enableZoomAfter: false,
 				share: false
 			});
-		});
-	</script>
-
-
-	<!-- Watermark Initialization -->
-	<script type="text/javascript">
-
-		$(document).ready(function(){
-			$(".lg-outer").initialize( function(){
-				console.log('hello');
+			//Add watermark when the image is fully loaded in lightbox
+			$lg.on('onSlideItemLoad.lg',function(event, index, fromTouch, fromThumb){
 				$('.lg-img-wrap img').watermark({
 					path: 'http://baivong.github.io/watermark/watermark.png',
 					opacity: 0.7,
 					gravity:'se'
 				});
 			});
-		})
-	</script>
+		});
+</script>
 </body>
 </html>
