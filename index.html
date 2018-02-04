@@ -243,7 +243,9 @@
 			});
 			$lg.on('onAfterSlide.lg', function(event, prevIndex, index) {
 			   $(".social-share").jsSocials({
-            		shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+			   	    showLabel: false,
+    				showCount: false,
+            		shares: [ "facebook", "twitter", "pinterest", "email",  "googleplus"]
         		});
 			});
 		});
