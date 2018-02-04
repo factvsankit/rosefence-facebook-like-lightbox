@@ -154,10 +154,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body class="home">
-
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58a4283ce4acd1001475a299&product=inline-share-buttons"></script>
 	<div class="demo-gallery">
 		<ul id="lightgallery" class="list-unstyled row">
-			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p></div>'>
+			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p><div class="social-share"><div class="sharethis-inline-share-buttons"></div></div></div>'>
 				<a href="">
 					<img class="img-responsive" src="img/thumb-1.jpg">
 				</a>
@@ -189,11 +189,12 @@
 				subHtmlSelectorRelative: true,
 				thumbnail: false,
 				download: false,
-				enableDrag: true,
+				enableDrag: false,
 				enableSwipe: false,
 				zoom: false,
 				scale: false,
-				enableZoomAfter: false
+				enableZoomAfter: false,
+				share: false
 			});
 		});
 	</script>
