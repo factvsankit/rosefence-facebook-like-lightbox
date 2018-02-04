@@ -246,13 +246,17 @@
 
 				//var curr_url      = window.location.href; 
 				$(".ss-networks").jsSocials("destroy");
-			   $(".ss-networks").jsSocials({
+			   	$(".ss-networks").jsSocials({
 			   	    showLabel: false,
     				showCount: false,
             		shares: [ "facebook", "twitter", "pinterest", "email"],
 			   		text: 'Fading Lights',
-			   		url: window.location.href,
-			   		shareIn: "popup"
+			   		// url: window.location.href,
+			   		// shareIn: "popup",
+			   		shareUrl:function(url,text){
+			   			url: window.location.href,
+			   			text:'hello'
+			   		}
         		});
 			});
 		});
