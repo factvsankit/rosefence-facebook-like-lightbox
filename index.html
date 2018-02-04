@@ -174,7 +174,7 @@
 		text-transform: uppercase;
 		font-family: 'mbold';
 		text-decoration: none;
-		
+
 		-webkit-transition: opacity 0.5s ease-out;
 		-o-transition: opacity 0.5s ease-out;
 		transition: opacity 0.5s ease-out;
@@ -191,12 +191,12 @@
 					<img class="img-responsive" src="img/thumb-1.jpg">
 				</a>
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/2-375.jpg 375, img/2-480.jpg 480, img/2.jpg 800" data-src="img/2-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p></div>'>
+			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/2-375.jpg 375, img/2-480.jpg 480, img/2.jpg 800" data-src="img/2-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p><div class="social-share-product-view"><div class="product-view"><a href="" target="_blank">View Product Details</a></div><div class="social-share"><h3>Share This Product</h3><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58a4283ce4acd1001475a299&product=inline-share-buttons"></script><div class="sharethis-inline-share-buttons"></div></div></div></div>'>
 				<a href="">
 					<img class="img-responsive" src="img/thumb-2.jpg">
 				</a>
 			</li>
-			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="img/13-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p></div>'>
+			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="img/13-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p><div class="social-share-product-view"><div class="product-view"><a href="" target="_blank">View Product Details</a></div><div class="social-share"><h3>Share This Product</h3><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58a4283ce4acd1001475a299&product=inline-share-buttons"></script><div class="sharethis-inline-share-buttons"></div></div></div></div>'>
 				<a href="">
 					<img class="img-responsive" src="img/thumb-13.jpg">
 				</a>
@@ -207,6 +207,7 @@
 	<script src="js/lightgallery-all.min.js"></script>
 	<script src="js/jquery.mousewheel.min.js"></script>
 	<script src="js/jquery.watermark.min.js"></script>
+	<script src="js/jquery.initialize.min.js"></script>
 
 	<!-- LightBox Initialization -->
 
@@ -233,10 +234,13 @@
 	<script type="text/javascript">
 
 		$(document).ready(function(){
-			$('img').watermark({
-				path: 'http://baivong.github.io/watermark/watermark.png',
-				opacity: 0.7,
-				gravity:'se'
+			$(".lg-outer").initialize( function(){
+				console.log('hello');
+				$('.lg-img-wrap img').watermark({
+					path: 'http://baivong.github.io/watermark/watermark.png',
+					opacity: 0.7,
+					gravity:'se'
+				});
 			});
 		})
 	</script>
