@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a76ee402fd34b00134b0f18&product=inline-share-buttons"></script>
+	
 	<title>jQuery lightGallery demo</title>
 	<link href="css/lightgallery.css" rel="stylesheet">
 	<style type="text/css">
@@ -188,10 +188,9 @@
 
 </head>
 <body class="home">
-<div class="sharethis-inline-share-buttons"></div>
 	<div class="demo-gallery">
 		<ul id="lightgallery" class="list-unstyled row">
-			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p><div class="social-share-product-view"><div class="product-view"><a href="" target="_blank">View Product Details</a></div><div class="social-share"><h3>Share This Product</h3></div></div></div>'>
+			<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg" data-sub-html='<div class="caption-box" data-width="400"> <h2>Fading Lights</h2><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p><div class="social-share-product-view"><div class="product-view"><a href="" target="_blank">View Product Details</a></div><div class="social-share"><h3>Share This Product</h3><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a76ee402fd34b00134b0f18&product=inline-share-buttons"></script><div class="sharethis-inline-share-buttons"></div></div></div></div>'>
 				<a href="">
 					<img class="img-responsive" src="img/thumb-1.jpg">
 				</a>
@@ -238,10 +237,6 @@
 					opacity: 0.7,
 					gravity:'se'
 				});
-			});
-
-			$lg.on('onAfterSlide.lg',function(event, index, fromTouch, fromThumb){
-				$('.sharethis-inline-share-buttons').appendTo('.social-share');
 			});
 		});
 </script>
