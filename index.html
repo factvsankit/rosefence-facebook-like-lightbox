@@ -122,9 +122,9 @@
 		padding-bottom: 80px;
 	}
 
-.lg-outer .lg-item {
-	background-position: calc((100% - 360px) / 2) center;
-}
+	.lg-outer .lg-item {
+		background-position: calc((100% - 360px) / 2) center;
+	}
 	.lg-outer .lg-toolbar{
 		width: auto;
 		right: 360px;
@@ -179,11 +179,12 @@
 	<script src="js/jquery.mousewheel.min.js"></script>
 	<script src="js/jquery.watermark.min.js"></script>
 
-<!-- LightBox Initialization -->
+	<!-- LightBox Initialization -->
 
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#lightgallery').lightGallery({
+				mode: 'lg-fade',
 				appendSubHtmlTo: '.lg-item',
 				subHtmlSelectorRelative: true,
 				thumbnail: false,
@@ -198,16 +199,16 @@
 	</script>
 
 
-<!-- Watermark Initialization -->
-<script type="text/javascript">
-	
-	$(document).ready(function(){
-  		$('img').watermark({
-  			path: 'http://baivong.github.io/watermark/watermark.png',
-  			opacity: 0.7,
-  			gravity:'se'
-  		});
-	})
-</script>
+	<!-- Watermark Initialization -->
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('img').watermark({
+				path: 'http://baivong.github.io/watermark/watermark.png',
+				opacity: 0.7,
+				gravity:'se'
+			});
+		})
+	</script>
 </body>
 </html>
