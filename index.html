@@ -242,7 +242,7 @@
 					gravity:'se'
 				});
 			});
-			$lg.on('onAfterSlide.lg', function(event, prevIndex, index) {
+			$lg.on('onSlideItemLoad.lg', function(event, index) {
 
 				//var curr_url      = window.location.href; 
 				$(".ss-networks").jsSocials("destroy");
@@ -251,12 +251,7 @@
     				showCount: false,
             		shares: [ "facebook", "twitter", "pinterest", "email"],
 			   		text: 'Fading Lights',
-			   		// url: window.location.href,
-			   		// shareIn: "popup",
-			   		shareUrl: function(url,text){
-			   			url= window.location.href,
-			   			text='hello'
-			   		}
+			   		url: window.location.href
         		});
 			});
 		});
