@@ -243,12 +243,14 @@
 				});
 			});
 			$lg.on('onAfterSlide.lg', function(event, prevIndex, index) {
+
+				//var curr_url      = window.location.href; 
 			   $(".ss-networks").jsSocials({
 			   	    showLabel: false,
     				showCount: false,
             		shares: [ "facebook", "twitter", "pinterest", "email"],
 			   		text: 'hello',
-			   		url: 'http://google.com',
+			   		url: window.location.href
         		});
 			});
 		});
